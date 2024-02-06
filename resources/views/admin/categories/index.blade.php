@@ -26,7 +26,7 @@
             <!-- Small boxes (Stat box) -->
             <div class="row">
                 <div class="col-12">
-                    <p>Все Категории</p>
+                    <p>Все категории</p>
                 </div>
             </div>
             <!-- /.row -->
