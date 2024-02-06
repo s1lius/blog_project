@@ -3595,7 +3595,7 @@
             hProps = hProps.concat(["marginLeft", "marginRight"]);
 
             // Only animate children with width attributes specified
-            // TODO: is this right? should we include anything with css width specified as well
+            // TODO: is this right? should we includes anything with css width specified as well
             element.find("*[width]").each(function () {
                 var child = $(this),
                     childOriginal = $.effects.scaledDimensions(child),
@@ -5576,7 +5576,7 @@
                 base = this.active.offset().top;
                 height = this.element.innerHeight();
 
-                // jQuery 3.2 doesn't include scrollbars in innerHeight, add it back.
+                // jQuery 3.2 doesn't includes scrollbars in innerHeight, add it back.
                 if ($.fn.jquery.indexOf("3.2.") === 0) {
                     height += this.element[0].offsetHeight - this.element.outerHeight();
                 }
@@ -5606,7 +5606,7 @@
                 base = this.active.offset().top;
                 height = this.element.innerHeight();
 
-                // jQuery 3.2 doesn't include scrollbars in innerHeight, add it back.
+                // jQuery 3.2 doesn't includes scrollbars in innerHeight, add it back.
                 if ($.fn.jquery.indexOf("3.2.") === 0) {
                     height += this.element[0].offsetHeight - this.element.outerHeight();
                 }
@@ -8439,7 +8439,7 @@
 	 *
 	 * @param  format string - the expected format of the date
 	 * @param  value string - the date in the above format
-	 * @param  settings Object - attributes include:
+	 * @param  settings Object - attributes includes:
 	 *					shortYearCutoff  number - the cutoff year for determining the century (optional)
 	 *					dayNamesShort	string[7] - abbreviated names of the days from Sunday (optional)
 	 *					dayNames		string[7] - names of the days from Sunday (optional)
@@ -8653,7 +8653,7 @@
 	 *
 	 * @param  format string - the desired format of the date
 	 * @param  date Date - the date value to format
-	 * @param  settings Object - attributes include:
+	 * @param  settings Object - attributes includes:
 	 *					dayNamesShort	string[7] - abbreviated names of the days from Sunday (optional)
 	 *					dayNames		string[7] - names of the days from Sunday (optional)
 	 *					monthNamesShort string[12] - abbreviated names of the months (optional)
