@@ -6,8 +6,18 @@
         <div class="content-header">
             <div class="container-fluid">
                 <div class="row mb-2">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 d-flex align-items-center">
                         <h1 class="m-0">{{$category->title}}</h1>
+                        <a class="ml-3 mr-3 text-success" href="{{route('admin.category.edit', $category->id)}}"><i
+                                class="fas fa-pen"></i></a>
+                        <form action="{{route('admin.category.delete', $category->id)}}"
+                              method="post">
+                            @csrf
+                            @method('delete')
+                            <button type="submit" class="border-0 bg-transparent">
+                                <i class="fas fa-trash text-danger" role="button"></i>
+                            </button>
+                        </form>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">

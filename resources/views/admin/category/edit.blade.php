@@ -29,8 +29,9 @@
                         <div class="card card-primary">
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form action="#" method="post">
+                            <form action="{{route('admin.category.update', $category->id)}}" method="post">
                                 @csrf
+                                @method('patch')
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label>Название</label>
