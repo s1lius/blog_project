@@ -33,19 +33,19 @@
                                 @csrf
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <div class="form-group w-25">
+                                        <div class="form-group w-50">
                                             <label>Название</label>
                                             <input type="text" class="form-control" name="title"
                                                    placeholder="Введите название поста" value="{{old('title')}}">
                                             @error('title')
-                                            <div class="text-danger">Заполните поле</div>
+                                            <div class="text-danger">{{$message}}</div>
                                             @enderror
                                         </div>
                                         <div class="form-group">
                                             <label>Контент</label>
                                             <textarea id="summernote" name="content">{{old('content')}}</textarea>
                                             @error('content')
-                                            <div class="text-danger">Заполните поле</div>
+                                            <div class="text-danger">{{$message}}</div>
                                             @enderror
                                         </div>
                                         <div class="form-group w-50">
@@ -60,7 +60,7 @@
                                                 </div>
                                             </div>
                                             @error('preview_image')
-                                            <div class="text-danger">Заполните поле</div>
+                                            <div class="text-danger">{{$message}}</div>
                                             @enderror
                                         </div>
                                         <div class="form-group w-50">
@@ -75,7 +75,7 @@
                                                 </div>
                                             </div>
                                             @error('main_image')
-                                            <div class="text-danger">Заполните поле</div>
+                                            <div class="text-danger">{{$message}}</div>
                                             @enderror
                                         </div>
                                         <div class="form-group w-50">
@@ -87,6 +87,9 @@
                                                     >{{$category->title}}</option>
                                                 @endforeach
                                             </select>
+                                            @error('category_id')
+                                            <div class="text-danger">{{$message}}</div>
+                                            @enderror
                                         </div>
                                         <div class="form-group w-50">
                                             <label>Выбрать тэги</label>
@@ -99,6 +102,9 @@
                                                         value="{{$tag->id}}">{{$tag->title}}</option>
                                                 @endforeach
                                             </select>
+                                            @error('tag_ids')
+                                            <div class="text-danger">{{$message}}</div>
+                                            @enderror
                                         </div>
                                         <div class="form-group">
                                             <input type="submit" class="btn btn-primary mt-3" value="Добавить">
