@@ -56,7 +56,10 @@
                                 class="flag-icon flag-icon-squared rounded-circle flag-icon-gb"></span> Eng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Download</a>
+                        <form action="{{route('logout')}}" method="post">
+                            @csrf
+                            <input class="nav-link" type="submit" value="Выйти">
+                        </form>
                     </li>
                 </ul>
             </div>
