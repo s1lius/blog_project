@@ -47,6 +47,9 @@
                     <p>{{Auth::user()->name}}</p>
                 </li>
                 <li class="nav-item">
+                    <a class="btn btn-outline-secondary mr-3" href="/">На главную</a>
+                </li>
+                <li class="nav-item">
                     <form action="{{route('logout')}}" method="post">
                         @csrf
                         <input class="btn btn-outline-secondary" type="submit" value="Выйти">
