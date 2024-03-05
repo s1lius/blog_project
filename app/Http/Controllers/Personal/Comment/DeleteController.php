@@ -10,12 +10,12 @@ use App\Models\Tag;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class IndexController extends Controller
+class DeleteController extends Controller
 {
-    public function __invoke()
+    public function __invoke(Comment $comment)
     {
-        $comments = auth()->user()->comments;
+        $comment->delete();
 
-        return view('personal.comment.index', compact('comments'));
+        return redirect()->route('personal.comment.index');
     }
 }
