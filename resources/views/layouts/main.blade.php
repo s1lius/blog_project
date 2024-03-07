@@ -25,14 +25,14 @@
             <div class="collapse navbar-collapse" id="edicaMainNav">
                 <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">О нас</a>
+                        <a class="nav-link" href="#">О нас</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="{{route('main.index')}}" id="blogDropdown" data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">Блог</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Контакты</a>
+                        <a class="nav-link" href="#">Контакты</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ">
@@ -50,7 +50,7 @@
                         @endif
                     @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {{ Auth::user()->name }}
                             </a>
 
@@ -59,7 +59,7 @@
                                     {{ __('Личный кабинет') }}
                                 </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
+                                   onclick="preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Выйти') }}
                                 </a>
@@ -96,36 +96,36 @@
     <div class="container">
         <div class="row footer-widget-area">
             <div class="col-md-3">
-                <a href="index.html" class="footer-brand-wrapper">
+                <a href="#" class="footer-brand-wrapper">
                     <img src="{{asset('assets/images/logo.svg')}}" alt="edica logo">
                 </a>
                 <p class="contact-details">hello@edica.com</p>
                 <p class="contact-details">+23 3000 000 00</p>
                 <nav class="footer-social-links">
-                    <a href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#!"><i class="fab fa-twitter"></i></a>
-                    <a href="#!"><i class="fab fa-behance"></i></a>
-                    <a href="#!"><i class="fab fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
                 </nav>
             </div>
             <div class="col-md-3">
                 <nav class="footer-nav">
-                    <a href="#!" class="nav-link">Company</a>
-                    <a href="#!" class="nav-link">Android App</a>
-                    <a href="#!" class="nav-link">ios App</a>
-                    <a href="#!" class="nav-link">Blog</a>
-                    <a href="#!" class="nav-link">Partners</a>
-                    <a href="#!" class="nav-link">Careers</a>
+                    <a href="#" class="nav-link">Company</a>
+                    <a href="#" class="nav-link">Android App</a>
+                    <a href="#" class="nav-link">ios App</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">Partners</a>
+                    <a href="#" class="nav-link">Careers</a>
                 </nav>
             </div>
             <div class="col-md-3">
                 <nav class="footer-nav">
-                    <a href="#!" class="nav-link">FAQ</a>
-                    <a href="#!" class="nav-link">Reporting</a>
-                    <a href="#!" class="nav-link">Block Storage</a>
-                    <a href="#!" class="nav-link">Tools & Integrations</a>
-                    <a href="#!" class="nav-link">API</a>
-                    <a href="#!" class="nav-link">Pricing</a>
+                    <a href="#" class="nav-link">FAQ</a>
+                    <a href="#" class="nav-link">Reporting</a>
+                    <a href="#" class="nav-link">Block Storage</a>
+                    <a href="#" class="nav-link">Tools & Integrations</a>
+                    <a href="#" class="nav-link">API</a>
+                    <a href="#" class="nav-link">Pricing</a>
                 </nav>
             </div>
             <div class="col-md-3">
@@ -148,9 +148,9 @@
         </div>
         <div class="footer-bottom-content">
             <nav class="nav footer-bottom-nav">
-                <a href="#!">Privacy & Policy</a>
-                <a href="#!">Terms</a>
-                <a href="#!">Site Map</a>
+                <a href="#">Privacy & Policy</a>
+                <a href="#">Terms</a>
+                <a href="#">Site Map</a>
             </nav>
             <p class="mb-0">© Edica. 2020 <a href="https://www.bootstrapdash.com" target="_blank"
                                              rel="noopener noreferrer" class="text-reset">bootstrapdash</a> . All rights
