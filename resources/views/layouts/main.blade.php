@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{asset('assets/vendors/font-awesome/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/vendors/aos/aos.css')}}assets/vendors/aos/aos.css">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/vendors/bootstrap/css/bootstrap.min.css')}}">
     <script src="{{asset('assets/vendors/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('assets/js/loader.js')}}"></script>
 </head>
@@ -34,7 +35,7 @@
                         <a class="nav-link" href="#">Контакты</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav">
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">
@@ -58,7 +59,7 @@
                                     {{ __('Личный кабинет') }}
                                 </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="preventDefault();
+                                   onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Выйти') }}
                                 </a>
@@ -160,7 +161,7 @@
 <script src="{{asset('assets/vendors/popper.js/popper.min.js')}}"></script>
 <script src="{{asset('assets/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/vendors/aos/aos.js')}}"></script>
-<script src="{{asset('assets/js/post.js')}}"></script>
+<script src="{{asset('assets/js/main.js')}}"></script>
 <script>
     AOS.init({
         duration: 1000
