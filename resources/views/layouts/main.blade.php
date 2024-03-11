@@ -18,7 +18,8 @@
 <header class="edica-header">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="{{route('post.index')}}"><img src="{{asset('assets/images/logo.svg')}}" alt="Edica"></a>
+            <a class="navbar-brand" href="{{route('post.index')}}"><img src="{{asset('assets/images/logo.svg')}}"
+                                                                        alt="Edica"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav"
                     aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,6 +31,9 @@
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="{{route('post.index')}}">Блог</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="{{route('category.index')}}">Категории</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Контакты</a>
@@ -50,7 +54,8 @@
                         @endif
                     @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                               data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {{ Auth::user()->name }}
                             </a>
 
@@ -64,7 +69,7 @@
                                     {{ __('Выйти') }}
                                 </a>
 
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none" >
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
                             </div>
@@ -81,9 +86,11 @@
         <div class="footer-banner" data-aos="fade-up">
             <h1 class="banner-title">Download it now.</h1>
             <div class="banner-btns-wrapper">
-                <button class="btn btn-success"><img src="{{asset('assets/images/apple@1x.svg')}}" alt="ios" class="mr-2"> App Store
+                <button class="btn btn-success"><img src="{{asset('assets/images/apple@1x.svg')}}" alt="ios"
+                                                     class="mr-2"> App Store
                 </button>
-                <button class="btn btn-success"><img src="{{asset('assets/images/android@1x.svg')}}" alt="android" class="mr-2">
+                <button class="btn btn-success"><img src="{{asset('assets/images/android@1x.svg')}}" alt="android"
+                                                     class="mr-2">
                     Google Play
                 </button>
             </div>
